@@ -1,0 +1,20 @@
+{
+  "name": "react-native-upi",
+  "version": "1.0.1",
+  "scripts": {},
+  "main": "index.js",
+  "keywords": [
+    "react-native",
+    "react",
+    "native",
+    "upi",
+    "payments",
+    "peer to peer"
+  ],
+  "author": "Nitish Phanse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nitish24p/react-native-upi/issues"
+  },
+  "homepage": "https://github.com/nitish24p/react-native-upi#readme"
+}
