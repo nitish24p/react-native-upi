@@ -1,7 +1,7 @@
 # react-native-upi-payment
 
 
-<img src="./art/art.png" alt="My cool logo"/>
+<img width="778" alt="art" src="https://user-images.githubusercontent.com/13037986/46161228-a1369700-c2a2-11e8-9b9d-d0c40a3e0f38.png">
 
 [react-native-upi](https://www.npmjs.com/package/react-native-upi-payment) is a tiny plugin to integrate the UPI payment interface made by [NPCI](https://www.bhimupi.org.in/) from your react native apps. This plugin allows you to enable peer to peer payments via UPI in your react native apps. Linking specs have been followed as per [this](https://www.npci.org.in/sites/all/themes/npcl/images/PDF/UPI_Linking_Specs_ver_1.5.1.pdf) doc
 
