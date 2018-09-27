@@ -1,4 +1,4 @@
-# react-native-upi
+# react-native-upi-payment
 
 
 <img src="./art/art.png" alt="My cool logo"/>
