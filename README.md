@@ -26,15 +26,15 @@ react-native run link
 #### Manual Installation
 Open `android/settings.gradle` add the following
 ```
-include ':react-native-upi'
-project(':react-native-upi').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-upi/android')
+include ':react-native-upi-payment'
+project(':react-native-upi-payment').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-upi-payment/android')
 
 ```
 
 Open `android/build.gradle` add the following in the dependencies section
 ```
 dependencies {
-    compile project(':react-native-upi')
+    compile project(':react-native-upi-payment')
 }
 ```
 
