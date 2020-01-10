@@ -86,7 +86,7 @@ public class UpiPaymentModule extends ReactContextBaseJavaModule implements Acti
 
             if (requestCode == REQUEST_CODE) {
                 Bundle bundle = data.getExtras();
-                if (bundle.getString("response") == "SUCCESS") {
+                if (data.getStringExtra("Status").trim().equals("SUCCESS")){
                     responseData.put("status", data.getStringExtra("Status"));
                     responseData.put("message", bundle.getString("response"));
                     this.successHandler.invoke(gson.toJson(responseData));
