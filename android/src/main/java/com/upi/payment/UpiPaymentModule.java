@@ -80,7 +80,9 @@ public class UpiPaymentModule extends ReactContextBaseJavaModule implements Acti
             if (data == null) {
                 responseData.put("status", FAILURE);
                 responseData.put("message", "No action taken");
-                this.failureHandler.invoke(gson.toJson(responseData));
+                if(this.failureHandler!=null){
+                    this.failureHandler.invoke(gson.toJson(responseData));
+                }
                 return;
             }
 
@@ -99,7 +101,9 @@ public class UpiPaymentModule extends ReactContextBaseJavaModule implements Acti
             } else {
                 responseData.put("message", "Request Code Mismatch");
                 responseData.put("status", FAILURE);
-                this.failureHandler.invoke(gson.toJson(responseData));
+                if(this.failureHandler!=null){
+                    this.failureHandler.invoke(gson.toJson(responseData));
+                }
             }
 
         } catch (JSONException e) {
