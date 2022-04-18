@@ -20,7 +20,7 @@ yarn add react-native-upi-payment
 ### Android
 #### Automatic Installation
 ```
-react-native run link
+react-native link
 ```
 
 #### Manual Installation
@@ -31,25 +31,28 @@ project(':react-native-upi-payment').projectDir = new File(rootProject.projectDi
 
 ```
 
-Open `android/build.gradle` add the following in the dependencies section
+Open `android/app/build.gradle` add the following in the dependencies section
 ```
 dependencies {
-    compile project(':react-native-upi-payment')
+    implementation project(':react-native-upi-payment')
 }
 ```
 
-Open `MainApplication.java`
+Open `android/app/src/main/java/com/<app-name>/MainApplication.java`
 ```java
 // Other imports
 import com.upi.payment.UpiPaymentPackage;
 
+  // Do this when the package is not auto added
   // Add this in the Main Application Class
   @Override
   protected List<ReactPackage> getPackages() {
-    return Arrays.<ReactPackage>asList(
-       //... Other packages
-          new UpiPaymentPackage() // <- Add this line
-    );
+    // ...
+    List<Reactpackage> packages = new PackageList(this).getPackages();
+
+    packages.add(new UpiPaymentPackage()) // <- Add this line
+
+    return packages;
   }
 ```
 
